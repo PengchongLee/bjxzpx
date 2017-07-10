@@ -33,6 +33,7 @@
 
 						<td width="250">
 
+
 						<img border="0" src="http://www.xzwy.com/upload/<?= $img['img_path']?>" width="200" height="120"></td>
 
 						<td>

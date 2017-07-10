@@ -1,3 +1,4 @@
+
 <?php
     $company = (new CompanyModel())->selectAll();
     $company = $company[0];
@@ -42,6 +43,7 @@
   <div align="center">
 
 	<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table476" height="28" background="<?= APP_PUBLIC ?>images/top_bg.jpg">
+
 
 		<tr>
 

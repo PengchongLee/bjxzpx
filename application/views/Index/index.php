@@ -1,6 +1,8 @@
+
 <div align="center">
 
 <table width="1100" border="0" cellpadding="0" cellspacing="0" background="<?= APP_PUBLIC ?>images/centerbg.gif" style="border-top-width: 0px; border-bottom-width: 0px; " id="table556">
+
 
   <tr>
 

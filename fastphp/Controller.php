@@ -16,6 +16,12 @@ class Controller
         $this->_view = new View($controller, $action);
     }
 
+    public function display($url = "")
+    {
+        $path = APP_HOST;
+        header("refresh:0;url=$path/$url");
+    }
+
     // 分配变量
     public function assign($name, $value)
     {
