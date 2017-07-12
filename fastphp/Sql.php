@@ -23,9 +23,15 @@ class Sql
     {
         if (isset($where)) {
             $this->filter .= ' WHERE ';
-            $this->filter .= implode(' ', $where);
-        }
 
+            $arr = [];
+            foreach( $where as $key =>$val  )
+            {
+                $arr[] = $key.'='.$val;
+            }
+
+        }
+      $this->filter .=  implode(' and  ', $arr);
         return $this;
     }
 

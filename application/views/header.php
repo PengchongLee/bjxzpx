@@ -1,3 +1,9 @@
+
+<?php
+    $company = (new CompanyModel())->selectAll();
+    $company = $company[0];
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -36,7 +42,8 @@
 
   <div align="center">
 
-	<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table476" height="28" background="images/top_bg.jpg">
+	<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table476" height="28" background="<?= APP_PUBLIC ?>images/top_bg.jpg">
+
 
 		<tr>
 
@@ -48,7 +55,7 @@
 
 		<tr>
 
-			<td width="800" align="left">&nbsp;欢迎来到北京学志伟业文化交流有限责任公司！</td>
+			<td width="800" align="left">&nbsp;欢迎来到<?= $company['com_name']?>！</td>
 
 			<td align="right"><div id="showtimes"></div>
 
@@ -238,13 +245,13 @@ setInterval("show_cur_times()",100);
 
             <tr>
 
-              <td width="25%"  align="left"><a href="./"><img src="<?= APP_PUBLIC?>images/2017-0320170329105405402.png"  border=0></a></td>
+              <td width="25%"  align="left"><a href="./"><img src="<?= $company['com_logo']?>"  border=0></a></td>
 
 			  <td width="17%"  align="left">　</td>
 
               <td align="right"><b><font color="#FFFFFF"><div style="text-align:right;">
 
-	<span style="font-family:SimHei;font-size:16px;">热线电话：010-52345872</span> 
+	<span style="font-family:SimHei;font-size:16px;">热线电话：<?= $company['com_tel']?></span>
 
 </div></font></b></td>
 
@@ -308,51 +315,18 @@ setInterval("show_cur_times()",100);
 
 <table border="0" width="100%" cellspacing="0" cellpadding="5" class="commonmenu">
 
- 
+    <tr>
 
-  <tr> 
+        <td class=""><a href="<?= APP_HOST?>index/index" target="_self" class="">网站首页</a></td>
 
+      <?php
+          $nav = (new NavModel())->selectAll();
+          foreach( $nav as $key=>$val ) {
+      ?>
 
+		<td class=""><a href="<?= APP_HOST?>content/content/<?php echo $val['nav_id'] ?>" target="_self" class=""><?= $val['nav_name']?></a></td>
 
-		<td class=""><a href="index.php" target="_self" class="">网站首页</a></td>
-
-
-
-		<td class=""><a href="index.php?m=content&c=index&a=lists&catid=85" target="_self" class="">公司简介</a></td>
-
-
-
-		<td class=""><a href="index.php?m=content&c=index&a=lists&catid=138" target="_self" class="">项目介绍</a></td>
-
-
-
-		<td class=""><a href="index.php?m=content&c=index&a=lists&catid=71" target="_self" class="">培训信息</a></td>
-
-
-
-		<td class="on"><a href="index.php?m=content&c=index&a=lists&catid=128" target="_self" class="">内训课程</a></td>
-
-
-
-		<td class=""><a href="index.php?m=content&c=index&a=lists&catid=7" target="_self" class="">专家团队</a></td>
-
-
-
-		<td class=""><a href="index.php?m=content&c=index&a=lists&catid=24" target="_self" class="">在线报名</a></td>
-
-
-
-		<td class=""><a href="index.php?m=content&c=index&a=lists&catid=137" target="_self" class="">证书样本</a></td>
-
-
-
-		<td class=""><a href="index.php?m=content&c=index&a=lists&catid=129" target="_self" class="">在线下载</a></td>
-
-
-
-		<td class=""><a href="index.php?m=content&c=index&a=lists&catid=3" target="_self" class="">联系我们</a></td>
-
- 
+        <?php }?>
 
 </tr>
 

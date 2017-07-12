@@ -1,3 +1,14 @@
+<?php
+
+    $company = (new CompanyModel())->selectAll();
+
+    $company = $company[0];
+
+    $img = (new ImgModel())->selectAll();
+
+    $img = $img[0];
+?>
+
 <div align="center">
 
 <table id=table473 cellSpacing=0 cellPadding=0 width="100%" border=0 bgcolor="#C5001C">
@@ -22,7 +33,8 @@
 
 						<td width="250">
 
-						<img border="0" src="images/foot-logo.png" width="200" height="120"></td>
+
+						<img border="0" src="http://www.xzwy.com/upload/<?= $img['img_path']?>" width="200" height="120"></td>
 
 						<td>
 
@@ -38,11 +50,11 @@
 
 						<p align="left">
 
-						<font style="font-size: 10pt"><strong><span style="font-size:14px;">                  北京学志伟业文化交流有限责任公司 </span></strong><a href="http://www.xxx.com"><strong><span style="font-size:14px;">www.bjxzpx.com</span></strong></a><br />
+						<font style="font-size: 10pt"><strong><span style="font-size:14px;"> <?= $company['com_name']?> </span></strong><a href="<?= APP_HOST?>index/index"><strong><span style="font-size:14px;"><?= $company['web_address']?></span></strong></a><br />
 
 <p>
 
-	<strong><span style="font-size:14px;">地址：北京市丰台区万柳桥天瑞大厦一层   咨询热线：010-52345872 010-52345871 </span></strong>
+	<strong><span style="font-size:14px;">地址：<?= $company['com_address']?>   咨询热线：<?= $company['com_tel']?> </span></strong>
 
 </p>
 
@@ -50,7 +62,7 @@
 
 <div>
 
-	<strong><span style="font-size:14px;">网站备案号：<span style="line-height:20px;background-color:#ffffff;font-family:'lucida Grande', Verdana, 'Microsoft YaHei';">京ICP备</span><span style="line-height:20px;background-color:#ffffff;font-family:'lucida Grande', Verdana, 'Microsoft YaHei';">17019015</span><span style="line-height:20px;background-color:#ffffff;font-family:'lucida Grande', Verdana, 'Microsoft YaHei';">号-1 </span><span style="background-color:#ffffff;font-family:'lucida Grande', Verdana, 'Microsoft YaHei';"></span></span></strong><span style="line-height:1.5;font-size:12px;font-weight:normal;"></span><a href="/adm/" target="_blank"><strong><span style="font-size:14px;">网站管理</span></strong></a> 
+	<strong><span style="font-size:14px;">网站备案号：<span style="line-height:20px;background-color:#ffffff;font-family:'lucida Grande', Verdana, 'Microsoft YaHei';">京ICP备</span><span style="line-height:20px;background-color:#ffffff;font-family:'lucida Grande', Verdana, 'Microsoft YaHei';">17019015</span><span style="line-height:20px;background-color:#ffffff;font-family:'lucida Grande', Verdana, 'Microsoft YaHei';">号-1 </span><span style="background-color:#ffffff;font-family:'lucida Grande', Verdana, 'Microsoft YaHei';"></span></span></strong><span style="line-height:1.5;font-size:12px;font-weight:normal;"></span><a href="http://www.xzwy.com" target="_blank"><strong><span style="font-size:14px;">网站管理</span></strong></a>
 
 </div>
 

@@ -1,4 +1,7 @@
 <?php
+
+header("content-type:text/html;charset=utf8");
+
 // 应用目录为当前目录
 
 define('APP_PATH', str_replace('\\', '/', __DIR__). '/');
@@ -6,7 +9,7 @@ define('APP_PATH', str_replace('\\', '/', __DIR__). '/');
 // 开启调试模式
 define('APP_DEBUG', true);
 
-define('APP_HOST', 'http://www.myf.com/');
+define('APP_HOST', 'http://www.mvc.com/');
 
 define('APP_PUBLIC',APP_HOST.'public/');
 
