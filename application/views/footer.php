@@ -50,7 +50,7 @@
 
 						<p align="left">
 
-						<font style="font-size: 10pt"><strong><span style="font-size:14px;"> <?= $company['com_name']?> </span></strong><a href="<?= $company['web_address']?>"><strong><span style="font-size:14px;"><?= $company['web_address']?></span></strong></a><br />
+						<font style="font-size: 10pt"><strong><span style="font-size:14px;"> <?= $company['com_name']?> </span></strong><a href="<?= APP_HOST?>index/index"><strong><span style="font-size:14px;"><?= $company['web_address']?></span></strong></a><br />
 
 <p>
 

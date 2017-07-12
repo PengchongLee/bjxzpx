@@ -29,8 +29,38 @@ class Controller
     }
 
     // 渲染视图
-    public function render()
+    public function render( $view='' )
     {
-        $this->_view->render();
+        $view = empty($view) ? $this->_action : $view;
+        $this->_view->render($view);
+    }
+
+    //跳转控制器，方法
+    public function redirect($url=null) {
+        //$this->redirect('index')
+        $len = strpos($url,'?')+1;
+        $param = substr($url,$len);
+
+        $u = explode('/',$url);
+        $pau = substr($url,0,$len-1);
+//        echo $param.','.$pau;die;
+
+        if($len == 1){
+            if(count($u)<=1){
+                $url = APP_URL.'/'.$this->_controller.'/'.$url;
+            }else{
+                $url =APP_URL.'/'.$url;
+            }
+        }else{
+            if(count($u)<=1){
+                $url = APP_URL.'/'.$this->_controller.'/'.$pau.'&'.$param;
+            }else{
+                $url = APP_URL.'/'.$this->_controller.'/'.$pau.'&'.$param;
+            }
+        }
+
+        header("Location:".$url);
+        exit();
+
     }
 }

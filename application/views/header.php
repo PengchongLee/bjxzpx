@@ -324,7 +324,7 @@ setInterval("show_cur_times()",100);
           foreach( $nav as $key=>$val ) {
       ?>
 
-		<td class=""><a href="<?= APP_HOST?>index/content/<?php echo $val['nav_id'] ?>" target="_self" class=""><?= $val['nav_name']?></a></td>
+		<td class=""><a href="<?= APP_HOST?>content/content/<?php echo $val['nav_id'] ?>" target="_self" class=""><?= $val['nav_name']?></a></td>
 
         <?php }?>
 
