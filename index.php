@@ -11,7 +11,7 @@ define('APP_PATH', str_replace('\\', '/', __DIR__). '/');
 define('APP_DEBUG', true);
 
 
-define('APP_HOST', 'http://www.bjxzwy.com/');
+define('APP_HOST', 'http://www.mvc.com/');
 
 
 define('APP_PUBLIC',APP_HOST.'public/');

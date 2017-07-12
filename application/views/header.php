@@ -245,7 +245,7 @@ setInterval("show_cur_times()",100);
 
             <tr>
 
-              <td width="25%"  align="left"><a href="./"><img height="200" width="400" src="<?= $company['com_logo']?>"  border=0></a></td>
+              <td width="25%"  align="left"><a href="./"><img src="<?= $company['com_logo']?>"  border=0></a></td>
 
 			  <td width="17%"  align="left">　</td>
 
