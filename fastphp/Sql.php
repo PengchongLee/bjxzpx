@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class Sql
 {
@@ -31,8 +31,7 @@ class Sql
             }
 
         }
-         $this->filter .=  implode(' and  ', $arr);
-
+        $this->filter .=  implode(' and  ', $arr);
         return $this;
     }
 
@@ -51,7 +50,7 @@ class Sql
     public function selectAll()
     {
         $sql = sprintf("select * from `%s` %s", $this->_table, $this->filter);
-        $sth = $this->_dbHandle->prepare($sql);     
+        $sth = $this->_dbHandle->prepare($sql);
         $sth->execute();
         return $sth->fetchAll();
     }

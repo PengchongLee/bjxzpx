@@ -34,12 +34,12 @@ class View
         $controllerFooter = APP_PATH . 'application/views/' . $this->_controller . '/footer.php';
         $controllerLayout = APP_PATH . 'application/views/' . $this->_controller . '/' . $view . '.php';
 
-
         // 页头文件
         if (file_exists($controllerHeader)) {
             include ($controllerHeader);
         } else {
             include ($defaultHeader);
+
         }
 
         // 页内容文件
@@ -48,6 +48,7 @@ class View
         } else {
             include ($defaultLayout);
         }
+
         // 页脚文件
         if (file_exists($controllerFooter)) {
             include ($controllerFooter);
@@ -55,5 +56,6 @@ class View
             include ($defaultFooter);
         }
     }
+
 
 }

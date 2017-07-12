@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * 控制器基类
  */
@@ -16,13 +16,11 @@ class Controller
         $this->_view = new View($controller, $action);
     }
 
-
     public function display($url = "")
     {
         $path = APP_HOST;
         header("refresh:0;url=$path/$url");
     }
-
 
     // 分配变量
     public function assign($name, $value)
@@ -30,6 +28,7 @@ class Controller
         $this->_view->assign($name, $value);
     }
 
+    // 渲染视图
     public function render( $view='' )
     {
         $view = empty($view) ? $this->_action : $view;

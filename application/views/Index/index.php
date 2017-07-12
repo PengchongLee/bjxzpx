@@ -93,7 +93,7 @@
 
     <div id="lunhuanback">
         <?php foreach($maxlun as $k=>$v) { ?>
-        <p href="javascript:void(0);" target="" style="background-image: url(http://www.xzwy.com/upload/<?= $v['pic_link']?>); opacity: 0;"></p>
+            <p href="javascript:void(0);" target="" style="background-image: url(http://www.xzwy.com/upload/<?= $v['pic_link']?>); opacity: 0;"></p>
         <?php } ?>
 
     </div>
@@ -218,9 +218,9 @@
                         <div class="jd_body1">
 
                             <div id="jdAdSlide1" class="jd_ad_slide1">
-<?php foreach($minlun as $k=>$v) { ?>
-                                <img src="http://www.xzwy.com/upload/<?= $v['pic_link']?>" class="jd_ad_img">
-<?php } ?>
+                                <?php foreach($minlun as $k=>$v) { ?>
+                                    <img src="http://www.xzwy.com/upload/<?= $v['pic_link']?>" class="jd_ad_img">
+                                <?php } ?>
                                 <div id="jdAdBtn1" class="jd_ad_btn"></div>
 
                             </div>
@@ -277,109 +277,109 @@
 
                 </script></td>
 
-    <td width="20" valign="top">　
-    <td width="10" valign="top">　</td>
+            <td width="20" valign="top">　
+            <td width="10" valign="top">　</td>
 
-    <td valign="top">
+            <td valign="top">
 
-        <table height=32 cellspacing=0 cellpadding=0 width=100% border=0 id="table1035">
+                <table height=32 cellspacing=0 cellpadding=0 width=100% border=0 id="table1035">
 
-            <tbody>
+                    <tbody>
 
-            <tr>
+                    <tr>
 
-                <td bordercolor="#e6e6e6" style="border:solid 1px #e8e8e8">
+                        <td bordercolor="#e6e6e6" style="border:solid 1px #e8e8e8">
 
-                    <table height=32 cellspacing=0 cellpadding=0 width=100%  border=0 id="table1036">
+                            <table height=32 cellspacing=0 cellpadding=0 width=100%  border=0 id="table1036">
 
-                        <tbody>
+                                <tbody>
 
-                        <tr>
+                                <tr>
 
-                            <td  >
+                                    <td  >
 
-                                <table border="0" width="100%" cellspacing="0" cellpadding="0" height="30" id="table1037" bgcolor="#C5001C">
+                                        <table border="0" width="100%" cellspacing="0" cellpadding="0" height="30" id="table1037" bgcolor="#C5001C">
 
-                                    <tr>
+                                            <tr>
 
-                                        <td width="10">
+                                                <td width="10">
 
-                                            　</td>
+                                                    　</td>
 
-                                        <td>
+                                                <td>
 
-                                            <font color="#FFFFFF">
+                                                    <font color="#FFFFFF">
 
-                                                <span style="font-size: 11pt; font-weight:700">培训信息</span></font></td>
+                                                        <span style="font-size: 11pt; font-weight:700">培训信息</span></font></td>
 
-                                        <td width="60">
+                                                <td width="60">
 
-                                            <p align="center">
-<?php foreach($pro as $kk=>$vv) { ?>
-                                                <a href="<?= APP_HOST ?>content/content/<?= $vv['nav_id']?>">
-<?php } ?>
-                                                    <font color="#FFFFFF">更多&gt;&gt;</font></a></td>
+                                                    <p align="center">
+                                                        <?php foreach($pro as $kk=>$vv) { ?>
+                                                        <a href="<?= APP_HOST ?>content/content/<?= $vv['nav_id']?>">
+                                                            <?php } ?>
+                                                            <font color="#FFFFFF">更多&gt;&gt;</font></a></td>
 
-                                    </tr>
+                                            </tr>
 
-                                </table>
+                                        </table>
 
-                                <table border="0" width="100%" cellspacing="10" cellpadding="0" id="table1038">
+                                        <table border="0" width="100%" cellspacing="10" cellpadding="0" id="table1038">
 
-                                    <tr>
+                                            <tr>
 
-                                        <td>
+                                                <td>
 
-                                            <p align="left">
+                                                    <p align="left">
 
-                                            <table border="0" width="100%" cellspacing="0" cellpadding="1" height="10">
-
-
-<?php foreach($pro as $k=>$v) { ?>
-                                                <tr>
+                                                    <table border="0" width="100%" cellspacing="0" cellpadding="1" height="10">
 
 
-
-                                                    <td style="border-bottom:1px #CCCCCC dotted; text-align:left;" width="10">
-
-                                                        <p style="text-align: center"><font size="6">·</font></td>
-
-                                                    <td style="border-bottom:1px #CCCCCC dotted; text-align:left;">
-                                                        <a href="<?php echo APP_HOST ?>content/info/<?php echo $v['content_id']?>" target="_blank" class=""><span style="text-decoration: none"><?= $v['content_title']?></span></a></td>
+                                                        <?php foreach($pro as $k=>$v) { ?>
+                                                            <tr>
 
 
 
-                                                </tr>
-                                                <?php } ?>
+                                                                <td style="border-bottom:1px #CCCCCC dotted; text-align:left;" width="10">
+
+                                                                    <p style="text-align: center"><font size="6">·</font></td>
+
+                                                                <td style="border-bottom:1px #CCCCCC dotted; text-align:left;">
+                                                                    <a href="<?php echo APP_HOST ?>content/info/<?php echo $v['content_id']?>" target="_blank" class=""><span style="text-decoration: none"><?= $v['content_title']?></span></a></td>
 
 
-                                            </table>
 
-                                        </td>
+                                                            </tr>
+                                                        <?php } ?>
 
-                                    </tr>
 
-                                </table>
+                                                    </table>
 
-                            </td>
+                                                </td>
 
-                        </tr>
+                                            </tr>
 
-                        </tbody>
+                                        </table>
 
-                    </table>
+                                    </td>
 
-                </td>
+                                </tr>
 
-            </tr>
+                                </tbody>
 
-            </tbody>
+                            </table>
 
-        </table>
+                        </td>
 
-    </td>
+                    </tr>
 
-    </tr>
+                    </tbody>
+
+                </table>
+
+            </td>
+
+        </tr>
 
     </table>
     <div align="center">
@@ -405,9 +405,9 @@
                                                     <td width="60">
                                                         <p align="center">
                                                             <?php foreach($intro as $kk=>$vv) { ?>
-                                                            <a href="<?= APP_HOST ?>content/content<?= $vv['com_id']?>"></a>
-                                                                <?php } ?>
-                                                                <font color="#FFFFFF">更多&gt;&gt;</font></p></td>
+                                                                <a href="<?= APP_HOST ?>content/content<?= $vv['com_id']?>"></a>
+                                                            <?php } ?>
+                                                            <font color="#FFFFFF">更多&gt;&gt;</font></p></td>
                                                 </tr>
                                                 </tbody></table>
                                             <table id="table1026" width="100%" cellspacing="10" cellpadding="0" border="0">
@@ -644,9 +644,9 @@
                                                                 <td width="60">
 
                                                                     <p align="center">
-<?php foreach($news as $kk=>$vv) { ?>
+                                                                        <?php foreach($news as $kk=>$vv) { ?>
                                                                         <a href="<?= APP_HOST ?>content/content/<?= $vv['nav_id']?>">
-<?php } ?>
+                                                                            <?php } ?>
                                                                             <font color="#FFFFFF">更多&gt;&gt;</font></a></td>
 
                                                             </tr>
@@ -671,23 +671,23 @@
 
                                                         <table border="0" width="100%" cellspacing="0" cellpadding="1" height="10">
 
-<?php foreach($news as $k=>$v) { ?>
+                                                            <?php foreach($news as $k=>$v) { ?>
 
-                                                            <tr>
-
-
-
-                                                                <td style="border-bottom:1px #CCCCCC dotted; text-align:left;" width="10">
-
-                                                                    <p style="text-align: center"><font size="6">·</font></td>
-
-                                                                <td style="border-bottom:1px #CCCCCC dotted; text-align:left;">
-
-                                                                    <a href="<?= APP_HOST ?>content/info/<?= $v['content_id']?>" target="_self" class=""><span style="text-decoration: none"><?= $v['content_title']?></span></a></td>
+                                                                <tr>
 
 
 
-                                                            </tr>
+                                                                    <td style="border-bottom:1px #CCCCCC dotted; text-align:left;" width="10">
+
+                                                                        <p style="text-align: center"><font size="6">·</font></td>
+
+                                                                    <td style="border-bottom:1px #CCCCCC dotted; text-align:left;">
+
+                                                                        <a href="<?= APP_HOST ?>content/info/<?= $v['content_id']?>" target="_self" class=""><span style="text-decoration: none"><?= $v['content_title']?></span></a></td>
+
+
+
+                                                                </tr>
                                                             <?php } ?>
 
 
@@ -770,22 +770,22 @@
                                                                     <table border="0" width="100%" cellspacing="0" cellpadding="1" height="10">
 
 
-<?php foreach($pro as $k1=>$v1) { ?>
-                                                                        <tr>
+                                                                        <?php foreach($pro as $k1=>$v1) { ?>
+                                                                            <tr>
 
 
 
-                                                                            <td style="border-bottom:1px #CCCCCC dotted; text-align:left;" width="10">
+                                                                                <td style="border-bottom:1px #CCCCCC dotted; text-align:left;" width="10">
 
-                                                                                <p style="text-align: center"><font size="6">·</font></td>
+                                                                                    <p style="text-align: center"><font size="6">·</font></td>
 
-                                                                            <td style="border-bottom:1px #CCCCCC dotted; text-align:left;">
-                                                                                <a href="<?= APP_HOST ?>content/info/<?= $v3['content_id']?>" target="_self" class=""><span style="text-decoration: none"><?= $v1['content_title']?></span></a></td>
+                                                                                <td style="border-bottom:1px #CCCCCC dotted; text-align:left;">
+                                                                                    <a href="<?= APP_HOST ?>content/info/<?= $v3['content_id']?>" target="_self" class=""><span style="text-decoration: none"><?= $v1['content_title']?></span></a></td>
 
 
 
-                                                                        </tr>
-<?php } ?>
+                                                                            </tr>
+                                                                        <?php } ?>
 
 
                                                                     </table>
@@ -851,9 +851,9 @@
                                                                 <td width="60">
 
                                                                     <p align="center">
-<?php foreach($pro as $k4=>$v4) { ?>
+                                                                        <?php foreach($pro as $k4=>$v4) { ?>
                                                                         <a href="<?= APP_HOST ?>content/content/<?= $v4['nav_id']?>">
-<?php } ?>
+                                                                            <?php } ?>
                                                                             <font color="#FFFFFF">更多&gt;&gt;</font></a></td>
 
                                                             </tr>
@@ -870,24 +870,24 @@
 
                                                                     <table border="0" width="100%" cellspacing="0" cellpadding="1" height="10">
 
-<?php foreach($pro as $key=>$value) { ?>
+                                                                        <?php foreach($pro as $key=>$value) { ?>
 
-                                                                        <tr>
-
-
-
-                                                                            <td style="border-bottom:1px #CCCCCC dotted; text-align:left;" width="10">
-
-                                                                                <p style="text-align: center"><font size="6">·</font></td>
-
-                                                                            <td style="border-bottom:1px #CCCCCC dotted; text-align:left;">
-                                                                                <a href="<?= APP_HOST ?>content/info/<?= $v3['content_id']?>" target="_self" class=""><span style="text-decoration: none"><?= $value['content_title']?></span></a></td>
+                                                                            <tr>
 
 
 
-                                                                        </tr>
+                                                                                <td style="border-bottom:1px #CCCCCC dotted; text-align:left;" width="10">
 
-<?php } ?>
+                                                                                    <p style="text-align: center"><font size="6">·</font></td>
+
+                                                                                <td style="border-bottom:1px #CCCCCC dotted; text-align:left;">
+                                                                                    <a href="<?= APP_HOST ?>content/info/<?= $v3['content_id']?>" target="_self" class=""><span style="text-decoration: none"><?= $value['content_title']?></span></a></td>
+
+
+
+                                                                            </tr>
+
+                                                                        <?php } ?>
 
 
                                                                     </table>
@@ -1025,78 +1025,78 @@
                                                     <tr>
                                                         <td>
                                                             <p align="center">
-                                                                    </p>
-                                                                    <div class="box">
-                                                                        <div class="content soupuform">
-                                                                            <table width="100%" cellspacing="12" cellpadding="0" border="0">
-                                                                                <tbody>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        <form id="myform" method="post" action="<?= APP_HOST ?>online/sign_add" name="myform">
-                                                                                            <table class="table_form" width="100%" cellspacing="0">
-                                                                                                <tbody>
-                                                                                                <tr>
-                                                                                                    <th style="word-break: keep-all;" nowrap="nowrap">
-                                                                                                        <font color="red">*</font>
-                                                                                                        姓名
-                                                                                                    </th>
-                                                                                                    <td class="soupuform1">
-                                                                                                        <input id="title" class="input-text" name="user_name" size="22" style="width:;" value="" placeholder="姓名" type="text">
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <th style="word-break: keep-all;" nowrap="nowrap">
-                                                                                                        <font color="red">*</font>
-                                                                                                        性别
-                                                                                                    </th>
-                                                                                                    <td class="soupuform1">
-                                                                                                        <label class="ib" style="width:80px">
-                                                                                                            <input id="xingbienan" name="user_sex" checked="" value="1" type="radio">
-                                                                                                            先生
-                                                                                                        </label>
-                                                                                                        <label class="ib" style="width:80px">
-                                                                                                            <input id="xingbienv" name="user_sex" value="0" type="radio">
-                                                                                                            女士
-                                                                                                        </label>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <th style="word-break: keep-all;" nowrap="nowrap">
-                                                                                                        <font color="red">*</font>
-                                                                                                        电话
-                                                                                                    </th>
-                                                                                                    <td class="soupuform1">
-                                                                                                        <input id="dianhua" class="input-text" name="user_tel" size="22" style="width:;" value="" placeholder="电话" type="text">
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <th style="word-break: keep-all;" nowrap="nowrap"> 备注 </th>
-                                                                                                    <td class="soupuform1">
-                                                                                                        <textarea id="beizhu" class="input-textarea" name="user_remark" style="width:18;height:30;" placeholder="备注"></textarea>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td></td>
-                                                                                                    <td>
-                                                                                                        <div class="submit fr">
-                                                                                                            <input id="reset" class="reset" name="reset" value=" 重置 " type="reset">
-                                                                                                            <input id="dosubmit" class="but" name="dosubmit" value=" 提交 " type="submit">
-                                                                                                        </div>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </form>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </div>
-                                                                    </div>
-                                                                    </td>
-                                                                    </tr>
-                                                                    </tbody>
+                                                            </p>
+                                                            <div class="box">
+                                                                <div class="content soupuform">
+                                                                    <table width="100%" cellspacing="12" cellpadding="0" border="0">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <form id="myform" method="post" action="<?= APP_HOST ?>online/sign_add" name="myform">
+                                                                                    <table class="table_form" width="100%" cellspacing="0">
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <th style="word-break: keep-all;" nowrap="nowrap">
+                                                                                                <font color="red">*</font>
+                                                                                                姓名
+                                                                                            </th>
+                                                                                            <td class="soupuform1">
+                                                                                                <input id="title" class="input-text" name="user_name" size="22" style="width:;" value="" placeholder="姓名" type="text">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th style="word-break: keep-all;" nowrap="nowrap">
+                                                                                                <font color="red">*</font>
+                                                                                                性别
+                                                                                            </th>
+                                                                                            <td class="soupuform1">
+                                                                                                <label class="ib" style="width:80px">
+                                                                                                    <input id="xingbienan" name="user_sex" checked="" value="1" type="radio">
+                                                                                                    先生
+                                                                                                </label>
+                                                                                                <label class="ib" style="width:80px">
+                                                                                                    <input id="xingbienv" name="user_sex" value="0" type="radio">
+                                                                                                    女士
+                                                                                                </label>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th style="word-break: keep-all;" nowrap="nowrap">
+                                                                                                <font color="red">*</font>
+                                                                                                电话
+                                                                                            </th>
+                                                                                            <td class="soupuform1">
+                                                                                                <input id="dianhua" class="input-text" name="user_tel" size="22" style="width:;" value="" placeholder="电话" type="text">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th style="word-break: keep-all;" nowrap="nowrap"> 备注 </th>
+                                                                                            <td class="soupuform1">
+                                                                                                <textarea id="beizhu" class="input-textarea" name="user_remark" style="width:18;height:30;" placeholder="备注"></textarea>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td></td>
+                                                                                            <td>
+                                                                                                <div class="submit fr">
+                                                                                                    <input id="reset" class="reset" name="reset" value=" 重置 " type="reset">
+                                                                                                    <input id="dosubmit" class="but" name="dosubmit" value=" 提交 " type="submit">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </form>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
                                                                     </table>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
 
                                             </td>
 
@@ -1155,9 +1155,9 @@
                                                         <td width="60">
 
                                                             <p align="center">
-<?php foreach($ex as $kk=>$vv) { ?>
+                                                                <?php foreach($ex as $kk=>$vv) { ?>
                                                                 <a href="<?= APP_HOST ?>content/content/<?= $vv['nav_id']?>">
-<?php } ?>
+                                                                    <?php } ?>
                                                                     <font color="#FFFFFF">更多&gt;&gt;</font></a></td>
 
                                                     </tr>
@@ -1213,12 +1213,12 @@
 
 
 
-<?php foreach($ex as $k=>$v) { ?>
-                                                                        <div><span class="img"><a href="<?=  APP_HOST ?>content/content/<?= $v['nav_id']?>" target="_self"><img src="http://www.xzwy.com/upload/<?= $v['img_path']?>" width="150" height="200" border="0" alt="<?= $v['content_title']?>" /></a></span>
+                                                                        <?php foreach($ex as $k=>$v) { ?>
+                                                                            <div><span class="img"><a href="<?=  APP_HOST ?>content/content/<?= $v['nav_id']?>" target="_self"><img src="http://www.xzwy.com/upload/<?= $v['img_path']?>" width="150" height="200" border="0" alt="<?= $v['content_title']?>" /></a></span>
 
-                                                                            <span class="title"><a href="<?=  APP_HOST ?>content/content/<?= $v['nav_id']?>" target="_self"><font size="2"><?= $v['content_title']?></font></a></span></div>
+                                                                                <span class="title"><a href="<?=  APP_HOST ?>content/content/<?= $v['nav_id']?>" target="_self"><font size="2"><?= $v['content_title']?></font></a></span></div>
 
-<?php } ?>
+                                                                        <?php } ?>
 
 
                                                                     </li>
@@ -1304,17 +1304,17 @@
 
 
                                                     <?php foreach($friend as $k=>$v) { ?>
-                                                    <td> <table width="100%" border="0">
+                                                        <td> <table width="100%" border="0">
 
-                                                            <tr>
+                                                                <tr>
 
-                                                                <td align="center"><a href="http://zscx.osta.org.cn/" target="_blank"><img src="http://www.xzwy.com/upload/<?= $v['img_path']?>" width="160" height="60" border="0" alt="<?= $v['content_title']?>" /></a></td>
+                                                                    <td align="center"><a href="http://zscx.osta.org.cn/" target="_blank"><img src="http://www.xzwy.com/upload/<?= $v['img_path']?>" width="160" height="60" border="0" alt="<?= $v['content_title']?>" /></a></td>
 
-                                                            </tr>
+                                                                </tr>
 
-                                                        </table>
+                                                            </table>
 
-                                                    </td>
+                                                        </td>
                                                     <?php } ?>
 
 
@@ -1359,40 +1359,38 @@
 
 </td>
 
-        </tr>
+</tr>
 
-        </table>
+</table>
 
-      	</td>
+</td>
 
-        </tr>
+</tr>
 
-      </table>
+</table>
 
 
 </div>
 
 
 
-	</td>
+</td>
 
-    <td width="20" valign="top">　</td>
-
-
-
-	<!--原来你的代码-->
-
-    <!--
-
-	<td valign="top" bordercolor="#E6E6E6" style="border-style: solid; border-width: 1px">
-
-	-->
-
-	<!--新的代码，解决表格边框颜色在谷歌浏览器下的异常问题-->
-
-	<td valign="top" style="border:1px solid #E6E6E6; ">
+<td width="20" valign="top">　</td>
 
 
+
+<!--原来你的代码-->
+
+<!--
+
+<td valign="top" bordercolor="#E6E6E6" style="border-style: solid; border-width: 1px">
+
+-->
+
+<!--新的代码，解决表格边框颜色在谷歌浏览器下的异常问题-->
+
+<td valign="top" style="border:1px solid #E6E6E6; ">
 
 
 
@@ -1400,24 +1398,26 @@
 
 
 
-	</td>
 
-  </tr>
+
+</td>
+
+</tr>
 
 </table>
 
 </div>	<table id=table14 height=1 cellSpacing=0 cellPadding=0 width="100%" border=0>
 
-			<tbody>
+    <tbody>
 
-				<tr>
+    <tr>
 
-					<td height=20></td>
+        <td height=20></td>
 
-				</tr>
+    </tr>
 
-			</tbody>
+    </tbody>
 
-		</table>
+</table>
 
 </div>

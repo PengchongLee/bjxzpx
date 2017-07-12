@@ -208,7 +208,7 @@
                                         <td>
                                             <table width="100%" border="0" style="border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px" cellspacing="5" cellpadding="0">
                                                 <tr>
-                                                    <td align="center" style="border:1px solid #E6E6E6"><a href="<?= APP_HOST?>content/info/<?php echo $v['content_id'] ?>" target="_self">
+                                                    <td align="center" style="border:1px solid #E6E6E6"><a href="index.php?m=content&c=index&a=show&catid=7&id=216" target="_self">
                                                             <img src="http://www.xzwy.com/upload/<?= $v['img_path']?>" width="180" height="230" alt="牟老师" border="0" /></a></td>
                                                 </tr>
 
